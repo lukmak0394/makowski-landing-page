@@ -40,7 +40,8 @@ nav {
 }
 
 /* Section general*/
-section {
+section,
+footer {
     padding: 50px;
 }
 
