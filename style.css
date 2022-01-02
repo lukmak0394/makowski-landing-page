@@ -16,6 +16,13 @@ header::before {
     background-color: rgba(1, 1, 1, 0.6);
 }
 
+/* H1 in header */
+h1 {
+    z-index: 1;
+    color: #fff;
+    font-size: 4em;
+}
+
 /* Section and footer general*/
 section,
 footer {
@@ -25,12 +32,7 @@ footer {
 /*  Nav  */
 nav {
     z-index: 2;
-}
-
-h1 {
-    z-index: 1;
-    color: #fff;
-    font-size: 4em;
+    transition: all ease-in-out 0.3s;
 }
 
 .navbar-brand {
@@ -58,6 +60,7 @@ h1 {
     transition: all ease-in-out 0.2s;
 }
 
+/* Technologies used */
 .tech-stack {
     padding: 15px 0;
 }
@@ -86,14 +89,12 @@ form .btn {
     font-weight: 700;
 }
 
-
 form .form-control:focus {
     outline-style: solid;
     outline-color: #0d6efd;
     outline-width: 2px;
     border: none;
 }
-
 
 /* Menu icon id - own styling */
 #icon-bg-white {
