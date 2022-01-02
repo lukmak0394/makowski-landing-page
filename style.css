@@ -39,14 +39,15 @@ nav {
     color: #0d6efd !important;
 }
 
-/* Section general*/
-section,
-footer {
-    padding: 50px;
+/* Button transition */
+.btn {
+    transition: all ease-in-out 0.2s;
 }
 
-/* Change card btn hover  */
-.card .btn:hover {
+
+/* Change card and form btn hover  */
+.card .btn:hover,
+form .btn:hover {
     background-color: #fff;
     color: #0d6efd;
 }
@@ -54,6 +55,24 @@ footer {
 .col-lg-4 {
     padding: 20px 0;
 }
+
+/* Section and footer general*/
+section,
+footer {
+    padding: 50px 20px;
+}
+
+/* Form styling */
+form {
+    width: 75%;
+}
+form .btn {
+    width: 40%;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+
 
 /* Menu icon id - own styling */
 #icon-bg-white {
@@ -63,5 +82,18 @@ footer {
 @media screen and (max-width: 992px) {
     .col-md-6 {
         padding: 20px 0;
+    }
+
+    .card {
+        margin-bottom: 30px;
+    }
+    
+    .card:last-of-type {
+        margin-bottom: none;
+    }
+
+    form,
+    form .btn {
+        width: 100%;
     }
 }
