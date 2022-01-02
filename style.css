@@ -1,3 +1,4 @@
+
 /* Header general */
 header {
     background: url('img/christopher-gower-m_HRfLhgABo-unsplash.jpg') no-repeat center/cover;
@@ -15,9 +16,21 @@ header::before {
     background-color: rgba(1, 1, 1, 0.6);
 }
 
-/* /* Nav  */
+/* Section and footer general*/
+section,
+footer {
+    padding: 50px 20px;
+}
+
+/*  Nav  */
 nav {
     z-index: 2;
+}
+
+h1 {
+    z-index: 1;
+    color: #fff;
+    font-size: 4em;
 }
 
 .navbar-brand {
@@ -28,6 +41,7 @@ nav {
 
 .nav-link {
     transition: all ease-in-out 0.3s;
+    border-radius: 5px;
 }
 
 .nav-link:hover {
@@ -44,22 +58,22 @@ nav {
     transition: all ease-in-out 0.2s;
 }
 
+.tech-stack {
+    padding: 15px 0;
+}
+
+.tech-item {
+    padding: 3px 10px;
+    margin-bottom: 5px;
+    border-radius: 15px;
+    background-color: rgba(1, 1, 1, 0.2);
+}
 
 /* Change card and form btn hover  */
 .card .btn:hover,
 form .btn:hover {
     background-color: #fff;
     color: #0d6efd;
-}
-
-.col-lg-4 {
-    padding: 20px 0;
-}
-
-/* Section and footer general*/
-section,
-footer {
-    padding: 50px 20px;
 }
 
 /* Form styling */
@@ -73,6 +87,13 @@ form .btn {
 }
 
 
+form .form-control:focus {
+    outline-style: solid;
+    outline-color: #0d6efd;
+    outline-width: 2px;
+    border: none;
+}
+
 
 /* Menu icon id - own styling */
 #icon-bg-white {
@@ -85,9 +106,8 @@ form .btn {
     }
 
     .card {
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
-    
     .card:last-of-type {
         margin-bottom: none;
     }
