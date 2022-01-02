@@ -36,6 +36,7 @@
               </div>
             </div>
           </nav>
+          <h1 class="align-self-center mx-auto">Front-End Developer</h1>
     </header>
     <!-- About me  -->
     <section id="about" class="about text-center bg-white">
@@ -77,37 +78,58 @@
       <div class="container">
         <div class="row py-5">
           <div class="col-lg-3 col-md-4">
-            <div class="card mx-auto bg-light" >
-              <img src="img/todo-list.png" class="card-img-top" alt="to-do-list">
+            <div class="card mx-auto bg-light">
+              <img src="img/todo-list.jpg" class="card-img-top" alt="to-do-list">
               <div class="card-body">
-                <p class="card-text lead">Simple To-Do list web application with HTML, CSS and JavaScript</p>
+                <p class="card-text lead">Simple To-Do list application</p>
+                <div class="tech-stack d-flex flex-wrap justify-content-evenly">
+                  <span class="tech-item">HTML</span>
+                  <span class="tech-item">CSS</span>
+                  <span class="tech-item">JavaScript</span>
+                </div>
                 <a href="https://github.com/lukmak0394/my-todo-list" target="_blank" class="btn btn-primary">Go to Github</a>
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-4">
-            <div class="card mx-auto bg-light" >
-              <img src="img/book-library.png" class="card-img-top" alt="book-library">
+            <div class="card mx-auto bg-light ">
+              <img src="img/book-library.jpg" class="card-img-top" alt="book-library">
               <div class="card-body">
-                <p class="card-tex lead">Book library application with HTML, CSS and JavaScript</p>
+                <p class="card-text lead">Book library application</p>
+                <div class="tech-stack d-flex flex-wrap justify-content-evenly">
+                  <span class="tech-item">HTML</span>
+                  <span class="tech-item">CSS</span>
+                  <span class="tech-item">JavaScript</span>
+                </div>
                 <a href="https://github.com/lukmak0394/my-books-library" target="_blank" class="btn btn-primary">Go to Github</a>
               </div>
+              
             </div>
           </div>
           <div class="col-lg-3 col-md-4">
-            <div class="card mx-auto bg-light" >
-              <img src="img/ajax-imgw.PNG" class="card-img-top" alt="ajax-imgw">
+            <div class="card mx-auto bg-light ">
+              <img src="img/ajax-imgw.jpg" class="card-img-top" alt="ajax-imgw">
               <div class="card-body">
-                <p class="card-text lead">Weather data application with HTML, CSS, JavaScript and AJAX</p>
+                <p class="card-text lead">Weather data page</p>
+                <div class="tech-stack d-flex flex-wrap justify-content-evenly">
+                  <span class="tech-item">HTML</span>
+                  <span class="tech-item">CSS</span>
+                  <span class="tech-item">JavaScript</span>
+                  <span class="tech-item">AJAX</span>
+                </div>
                 <a href="https://github.com/lukmak0394/AJAX-IMGW" target="_blank" class="btn btn-primary">Go to Github</a>
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-4">
-            <div class="card mx-auto bg-light" >
-              <img src="img/four-card-section.PNG" class="card-img-top" alt="four-card-section">
+            <div class="card mx-auto bg-light ">
+              <img src="img/four-card-section.jpg" class="card-img-top" alt="four-card-section">
               <div class="card-body">
-                <p class="card-text lead">Single four card feature section component with HTML and CSS</p>
+                <p class="card-text lead">Single four card feature section</p>
+                <div class="tech-stack d-flex flex-wrap justify-content-evenly">
+                  <span class="tech-item">HTML</span>
+                  <span class="tech-item">CSS</span>
+                </div>
                 <a href="https://github.com/lukmak0394/four-card-feature-section-component" target="_blank" class="btn btn-primary">Go to Github</a>
               </div>
             </div>
@@ -119,24 +141,26 @@
     <section id="contact" class="contact text-center bg-light">
       <h2 class="text-secondary mx-auto py-5">Contact</h2>
       <div class="container">
-        <form method="POST" action="#" class="mx-auto text-secondary">
+        <form method="POST" action="#" class="mx-auto text-secondary my-form">
           <div class="mb-3">
             <label for="name" class="form-label">Name and surname</label>
-            <input type="text" name="name" id="name" class="form-control" placeholder="Name and surname" required>
+            <input type="text" name="name" id="name" class="form-control shadow-none" placeholder="Name and surname">
+            <p class="nameError text-danger d-none" style="font-style: italic">Field can't be blank</p>
           </div>
           <div class="mb-3">
             <label for="email" class="form-label">E-mail address</label>
-            <input type="email" name="email" id="email" class="form-control" placeholder="name@example.com" required>
+            <input type="email" name="email" id="email" class="form-control shadow-none" placeholder="name@example.com">
+            <p class="mailError text-danger d-none" style="font-style: italic">Field can't be blank</p>
           </div>
           <div class="mb-3">
             <label for="phone" class="form-label">Phone number</label>
-            <input type="tel" name="phone" id="phone" class="form-control" placeholder="+48 000 000 000">
+            <input type="tel" name="phone" id="phone" class="form-control shadow-none" placeholder="+48 000 000 000">
           </div>
           <div class="mb-3">
             <label for="message" class="form-label">Your message</label>
-            <textarea class="form-control" id="message" rows="3"></textarea>
+            <textarea class="form-control shadow-none" id="message" rows="3"></textarea>
           </div>
-          <button type="submit" class="btn btn-primary">Submit the form</button>
+          <button type="submit" class="btn btn-primary shadow-none">Submit the form</button>
         </form>
       </div>
     </section>
