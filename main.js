@@ -51,6 +51,7 @@ function validate(event) {
     const name = document.querySelector('#name');
     const email = document.querySelector('#email');
 
+
     if (name.value.trim() === '') {
         event.preventDefault();
         name.style.outline = "thick solid red";
@@ -65,9 +66,5 @@ function validate(event) {
 
     eventListeners();
 
-    document.querySelector('#name').value = '';
-    document.querySelector('#email').value = '';
-    document.querySelector('#phone').value = '';
-    document.querySelector('#message').value = '';
 }
 
