@@ -83,7 +83,8 @@ nav {
 
 /* Change card and form btn hover  */
 .card .btn:hover,
-form .btn:hover {
+form .btn:hover,
+.about .btn:hover {
     background-color: #fff;
     color: #0d6efd;
 }
@@ -105,9 +106,19 @@ form .form-control:focus {
     border: none;
 }
 
+
+.card {
+    height: 100%;
+}
 /* Menu icon id - own styling */
 #icon-bg-white {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+}
+
+@media screen and (max-width:576px) {
+    .about .btn {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -116,14 +127,12 @@ form .form-control:focus {
     }
 
     .card {
-        margin-bottom: 20px;
-    }
-    .card:last-of-type {
-        margin-bottom: none;
+        height: 98%;
     }
 
     form,
     form .btn {
         width: 100%;
     }
+
 }
