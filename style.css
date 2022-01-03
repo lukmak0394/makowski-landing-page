@@ -16,12 +16,21 @@ header::before {
     background-color: rgba(1, 1, 1, 0.6);
 }
 
-/* H1 in header */
-h1 {
+/* H1 , btn under h1 in header */
+h1,
+.btn {
     z-index: 1;
+}
+
+h1 {
     color: #fff;
     font-size: 4em;
 }
+
+header .btn:hover {
+    background-color: rgba(13,110,253, 0.7);
+}
+
 
 /* Section and footer general*/
 section,
