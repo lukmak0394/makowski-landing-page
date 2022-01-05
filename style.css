@@ -16,7 +16,7 @@ header::before {
     background-color: rgba(1, 1, 1, 0.6);
 }
 
-/* H1 , btn under h1 in header */
+/* h1 , btn under h1 in header */
 h1,
 .btn {
     z-index: 1;
@@ -30,7 +30,6 @@ h1 {
 header .btn:hover {
     background-color: rgba(13,110,253, 0.7);
 }
-
 
 /* Section and footer general*/
 section,
@@ -106,10 +105,16 @@ form .form-control:focus {
     border: none;
 }
 
-
 .card {
     height: 100%;
 }
+
+.card .btn {
+    width: 50%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
 /* Menu icon id - own styling */
 #icon-bg-white {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
@@ -129,10 +134,12 @@ form .form-control:focus {
     .card {
         height: 98%;
     }
+    .card .btn {
+        width: 60%;;
+    }
 
     form,
     form .btn {
         width: 100%;
     }
-
 }
