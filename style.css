@@ -16,11 +16,6 @@ header::before {
     background-color: rgba(1, 1, 1, 0.6);
 }
 
-/* h1 , btn under h1 in header */
-h1,
-.btn {
-    z-index: 1;
-}
 
 h1 {
     color: #fff;
@@ -110,7 +105,7 @@ form .form-control:focus {
 }
 
 .card .btn {
-    width: 50%;
+    max-width: 60%;
     margin: auto;
     margin-bottom: 20px;
 }
@@ -118,12 +113,6 @@ form .form-control:focus {
 /* Menu icon id - own styling */
 #icon-bg-white {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
-}
-
-@media screen and (max-width:576px) {
-    .about .btn {
-        width: 100%;
-    }
 }
 
 @media screen and (max-width: 992px) {
