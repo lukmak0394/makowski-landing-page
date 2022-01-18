@@ -17,8 +17,6 @@ form.addEventListener('submit',validate);
 function navColorChange() {
     // Check if window is scrolled more than 300px from top
     if (window.scrollY >= 250) {
-        // If yes - check if navbar contains class nav-opacity. Result of this if will be no casue this class hasn't been set by default.
-        if (navBar.classList.contains('bg-primary'));
         // Add this class to navbar
         navBar.classList.add('bg-primary');
         
